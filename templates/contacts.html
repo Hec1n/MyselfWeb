@@ -1,16 +1,6 @@
-<!doctype html>
-<html lang="ru">
+{% extends 'base.html' %}
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <title>Сайт Рустама | Контакты</title>
-</head>
+{% block content %}
 
 <body class="d-flex flex-column">
 
@@ -65,24 +55,5 @@
     </div>
 </div>
 
-<footer class="footer">
-    <div class="container d-flex justify-content-between flex-wrap">
-        <a href="https://www.instagram.com/flagman_astana/">
-            <img src="{{ url_for('static', filename='pictures/flagmanlogo.jfif') }}" alt="logo" style="width: 50%; max-width: 300px;">
-        </a>
-        <div class="icons">
-            <a href="https://vk.com/"><img src="{{ url_for('static', filename='pictures/vk.svg') }}" alt="vk"></a>
-            <a href="https://telegram.me/"><img src="{{ url_for('static', filename='pictures/telegram.svg') }}" alt="telegram"></a>
-            <a href="https://www.youtube.com/user/"><img src="{{ url_for('static', filename='pictures/youtube.svg') }}" alt="youtube"></a>
-        </div>
-    </div>
-</footer>
-
-<script src="https://code.jquery.com/jquery-3.7.0.js"
-        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
 </body>
-</html>
+{% endblock %}
